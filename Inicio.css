@@ -1,0 +1,107 @@
+/* Inicio de Sesión */
+.Inicio-sesion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 3rem 2.5rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /*Sombra más pronunciada y suave */
+  margin: 3rem auto;
+}
+
+.Inicio-sesion h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.Inicio-sesion h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: #007bff;
+  border-radius: 2px; /* Bordes redondeados para el underline */
+}
+
+/* Grupo para los campos de entrada */
+.input-group {
+  width: 100%;
+  margin-bottom: 1.8rem;
+}
+
+/* Campos de entrada */
+.Inicio-sesion .input-group input {
+  height: 52px;
+  width: 100%;
+  border: 2px solid #e0e0e0; /* Borde un poco más visible */
+  outline: none;
+  border-radius: 8px; /* Esquinas más redondeadas para las entradas */
+  padding: 0 18px;
+  color: #333;
+  background: #fdfdfd; /* Fondo casi blanco para las entradas */
+  font-size: 1.05rem; /* Fuente ligeramente más grande */
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición para el foco */
+}
+
+.Inicio-sesion .input-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.25);
+}
+
+/* Estilo del texto del placeholder */
+.Inicio-sesion ::placeholder {
+  color: #888;
+  font-size: 1rem;
+}
+
+.button-group {
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+/* Estilo del botón */
+.Inicio-sesion button {
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 55px;
+  width: 100%;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.Inicio-sesion button:hover {
+  background: #0056b3;
+  transform: translateY(
+    -2px
+  ); /*Pequeño efecto de elevación al pasar el ratón */
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.45);
+}
+
+.Inicio-sesion button:active {
+  /* Efecto al hacer click */
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+}
+
+.Inicio-sesion .Bottom,
+.Inicio-sesion .mensaje-enviado {
+  display: none;
+}

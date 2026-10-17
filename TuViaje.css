@@ -1,0 +1,224 @@
+/* --- TU VIAJE (RESULTADOS) --- */
+.Tu-Viaje {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  margin: 3rem auto;
+  max-width: 1200px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+#tu-viaje {
+  display: none;
+}
+
+.Tu-Viaje h3.nombre-completo {
+  font-size: 1.8rem;
+  color: #007bff;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+}
+
+.Tu-Viaje h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.8rem;
+}
+
+.Tu-Viaje h3.destino-principal {
+  font-size: 2.5rem;
+  color: #007bff;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.Tu-Viaje p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.Tu-Viaje .highlight-info {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Contenedor de dos columnas */
+.tu-viaje-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+  align-items: flex-start; /* Alinea los elementos secundarios con el inicio del contenedor flexible */
+}
+
+/* Columna de Detalles del Vuelo */
+.detalles-vuelo {
+  flex: 2;
+  min-width: 300px;
+  padding-right: 2rem;
+  border-right: 1px solid #eee;
+}
+
+.detalles-vuelo h2 {
+  margin-bottom: 0.5rem;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.detalles-vuelo .orden-fecha {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+.detalles-vuelo .orden-fecha:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.ruta-vuelo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.info-vuelo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-avion,
+.icon-pin {
+  font-size: 1.8rem;
+  color: #007bff;
+}
+
+.texto-vuelo .hora {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.2rem;
+}
+
+.texto-vuelo .aeropuerto {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0;
+}
+
+.duracion {
+  font-size: 0.95rem;
+  color: #777;
+  margin-left: 2.8rem;
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.duracion::before {
+  content: "";
+  position: absolute;
+  left: 1.5rem;
+  top: -1.5rem;
+  height: 2rem;
+  width: 2px;
+  background-color: #ddd;
+}
+
+/* Columna de Detalles del Equipaje */
+.detalles-equipaje {
+  min-width: 280px;
+  padding-top: 4.5rem;
+}
+
+.detalles-equipaje h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem; /* Mantener el espacio debajo del título de Equipaje */
+  border-bottom: 2px solid #eee; /* Mantener la línea divisoria */
+  padding-bottom: 0.8rem;
+}
+
+.lista-equipaje {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.item-equipaje {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0;
+  border-bottom: 1px dashed #eee;
+}
+
+.item-equipaje:last-child {
+  border-bottom: none;
+}
+
+.icono-descripcion {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* tamaño de los íconos de equipaje */
+.icono-descripcion img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.icono-descripcion p {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.cantidad {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 0;
+}
+
+/* Media Queries específicas para la sección Tu Viaje */
+@media (max-width: 768px) {
+  .tu-viaje-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detalles-vuelo,
+  .detalles-equipaje {
+    width: 95%;
+    padding-right: 0;
+    border-right: none;
+    padding-top: 0;
+  }
+
+  .detalles-vuelo {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .Tu-Viaje {
+    padding: 2rem 1rem;
+  }
+
+  .Tu-Viaje h3.nombre-completo {
+    font-size: 1.5rem;
+  }
+}

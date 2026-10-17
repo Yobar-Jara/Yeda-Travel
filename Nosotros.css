@@ -1,0 +1,238 @@
+/* RESET BÁSICO */
+body {
+  margin: 0; /* Elimina el margen exterior del navegador */
+  padding: 0; /* Espaciado interno general */
+  box-sizing: border-box; /* Incluye padding y border en los tamaños */
+  font-family: "Lora", serif; /* Fuente base legible y moderna */
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4; /* Fondo claro para toda la página */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  display: block; /* Elimina el espacio extra debajo de las imágenes */
+}
+
+/* CABECERA Y MENÚ SUPERIOR */
+.top-header {
+  position: fixed; /* Mantiene el menú fijo en la parte superior */
+  background-color: white; /* Fondo blanco para visibilidad */
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  z-index: 100; /* Se asegura de estar por encima de otros elementos */
+  height: 5rem; /* Altura fija del menú (80px aprox.) */
+  display: flex; /* Activa Flexbox para alinear los elementos internos */
+  align-items: center; /* Centrado vertical */
+  justify-content: space-between; /* Separación entre logo y menú */
+  padding: 0 1.5rem; /* Espacio horizontal interno del menú */
+}
+
+/* LOGO */
+.logo img {
+  height: 5rem; /* Altura del logo */
+  width: auto; /* Mantiene proporción automática */
+}
+
+/* BOTÓN HAMBURGUESA (ESCONDE EN DESKTOP) */
+.menu-toggle {
+  display: none; /* Oculto por defecto */
+  font-size: 2rem; /* Tamaño del ícono hamburguesa */
+  background: none; /* Sin fondo */
+  border: none; /* Sin bordes */
+  cursor: pointer; /* Manito al pasar el mouse */
+  margin-right: 1rem; /* Espacio entre el borde derecho */
+}
+
+/* SECCIONES PRINCIPALES */
+section {
+  padding: 6rem 2rem 3rem; /* Relleno superior ajustado para el encabezado fijo, más relleno inferior y lateral */
+  max-width: 1200px; /* Ancho máximo para el contenido */
+  margin: 0 auto; /* Centrar contenido */
+}
+
+section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative; /* Para el efecto de subrayado */
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Elimina el espacio extra debajo de las imágenes */
+}
+
+/* MENÚ PRINCIPAL HORIZONTAL */
+.menu-Horizontal {
+  list-style: none; /* Quita los bullets */
+  display: flex; /* Muestra en fila horizontal */
+  justify-content: space-around; /* Espaciado uniforme entre elementos */
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+/* ENLACES DEL MENÚ */
+.menu-Horizontal li a {
+  display: block; /* Permite aplicar padding y área clickeable completa */
+  padding: 1rem 1.8rem; /* Espaciado vertical y horizontal */
+  color: black; /* Color del texto */
+  font-weight: bold;
+  text-decoration: none; /* Sin subrayado */
+}
+
+.menu-Horizontal li a:hover {
+  color: red; /* Cambio de color al pasar el mouse */
+}
+
+/* SUBMENÚ VERTICAL OCULTO POR DEFECTO */
+.menu-Vertical {
+  display: none; /* Oculto por defecto */
+  position: absolute; /* Posición relativa al padre */
+  background-color: white; /* Fondo visible */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 12rem; /* Ancho del submenú */
+}
+
+.menu-Horizontal li:hover .menu-Vertical {
+  display: block; /* Se muestra al pasar el mouse */
+}
+
+.menu-Vertical li a {
+  display: block;
+  color: black;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.menu-Vertical li a:hover {
+  background-color: #eee; /* Resalta al pasar el mouse */
+}
+
+/* NOSOTROS, MISIÓN, VISIÓN */
+.Nostros,
+.Misión,
+.Visión {
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem; /* Espacio entre secciones */
+  padding-top: 3rem; /* Ajustar el relleno interno ya que la sección ya tiene relleno superior */
+}
+
+.Nostros-Contenido,
+.Misión-Contenido,
+.Visión-Contenido {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center; /* Centrar contenido en diseños de una sola columna */
+  padding: 0 2rem 2rem; /* Añadir relleno al contenido */
+}
+
+.Nostros-Texto,
+.Misión-Texto,
+.Visión-Texto {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.Nostros-Imagen {
+  flex: 1;
+  text-align: center;
+}
+
+.Nostros-Imagen img {
+  width: 100%;
+  max-width: 600px; /* Limitar el ancho de la imagen */
+  height: 400px; /* Altura fija para consistencia */
+  object-fit: cover; /* Cubrir el área, recortando si es necesario */
+  border-radius: 0.8rem;
+}
+
+/* SECCIÓN DE VIDEO */
+.Video {
+  background-color: #e9ecef; /* Fondo claro para la sección de video */
+  border-radius: 0.8rem;
+  margin-bottom: 2rem;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.proposito-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%; /* Relación de aspecto 16:9 (dividir 9 entre 16 = 0.5625) */
+  height: 0;
+  overflow: hidden;
+  max-width: 800px; /* Ancho máximo para el reproductor de video */
+  margin: 0 auto;
+  border-radius: 0.8rem;
+}
+
+.proposito-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0.8rem; /* Coincidir con el border-radius del padre */
+}
+
+/* RESPONSIVE: MÓVILES */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Mostrar botón hamburguesa en móviles */
+  }
+
+  .menu-Horizontal {
+    display: none; /* Ocultar menú horizontal por defecto */
+    flex-direction: column; /* Mostrarlo en vertical al activarse */
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 5rem; /* Debajo del menú fijo */
+    left: 0;
+  }
+
+  .menu-Horizontal.active {
+    display: flex; /* Mostrar menú al activar la clase */
+  }
+
+  .menu-Horizontal li {
+    border-bottom: 1px solid #ccc; /* Líneas separadoras */
+  }
+
+  .Nostros-Contenido {
+    flex-direction: column; /* Apilar imagen y texto en móvil */
+    text-align: center;
+  }
+
+  .Nosotros-Imagen img {
+    width: 90%; /* Reduce tamaño para pantallas pequeñas */
+    border-radius: 0.8rem;
+    margin: 0 auto;
+  }
+
+  .Nostros-Texto {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="Nosotros.css" />
+    <link rel="stylesheet" href="Inicio.css" />
+    <link rel="stylesheet" href="Descubre.css" />
+    <link rel="stylesheet" href="Administra.css" />
+    <link rel="stylesheet" href="TuViaje.css" />
+    <link rel="stylesheet" href="Contactanos.css" />
+    <link rel="stylesheet" href="PiePagina.css" />
+  </head>
+  <body>
+    <!-- MENÚ SUPERIOR -->
+    <nav class="top-header">
+      <a href="#" class="logo">
+        <img src="Imagenes/Yeda.png" alt="logo" />
+      </a>
+
+      <!-- BOTÓN HAMBURGUESA -->
+      <button class="menu-toggle" aria-label="Abrir menú">
+        &#9776;
+        <!-- Ícono de hamburguesa -->
+      </button>
+
+      <!-- MENÚ HORIZONTAL -->
+      <ul class="menu-Horizontal">
+        <li>
+          <a href="#">¿Quiénes Somos?</a>
+          <ul class="menu-Vertical">
+            <li><a href="#nosotros">Nostros</a></li>
+            <li><a href="#misión">Misión</a></li>
+            <li><a href="#visión">Visión</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Descubre</a>
+          <ul class="menu-Vertical">
+            <li><a href="#ofertas">Ofertas</a></li>
+            <li><a href="#destinos">Destinos</a></li>
+            <li><a href="#paquetes">Paquetes</a></li>
+            <li><a href="#alojamientos">Alojamientos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Mis Viajes</a>
+          <ul class="menu-Vertical">
+            <li><a href="#administra">Administra tus Viajes</a></li>
+          </ul>
+        </li>
+        <li><a href="#contacto">Contactanos</a></li>
+      </ul>
+    </nav>
+
+    <!--NOSOTROS-->
+    <section id="nosotros" class="Nostros">
+      <h2>Nosotros</h2>
+      <div class="Nostros-Contenido">
+        <div class="Nostros-Texto">
+          <p>
+            YedaTravel es una agencia de viajes especializada en diseñar
+            experiencias únicas para cada tipo de viajero. Nos apasiona ayudar a
+            descubrir el mundo de una forma auténtica, segura y personalizada.
+            Ya sea que sueñes con relajarte en playas paradisíacas, explorar
+            ciudades llenas de historia o vivir aventuras inolvidables en la
+            naturaleza, en YedaTravel nos encargamos de cada detalle para que tu
+            única preocupación sea disfrutar.
+          </p>
+          <p>
+            Con un equipo de asesores expertos, transformamos tus ideas en
+            itinerarios a medida, pensados especialmente para ti. En YedaTravel,
+            viajar no es solo llegar a un destino, es vivir una experiencia que
+            recordarás toda la vida.
+          </p>
+        </div>
+        <div class="Nostros-Imagen">
+          <img
+            width="600px"
+            height="400px"
+            src="https://eduka.occidente.co/wp-content/uploads/2023/09/Agente-de-Viajes-y-Servicios-Turisticos.jpg"
+            alt="Nosotros"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--MISIÓN-->
+    <section id="misión" class="Misión">
+      <h2>Misión</h2>
+      <div class="Misión-Contenido">
+        <div class="Misión-Texto">
+          <p>
+            Brindar experiencias de viaje inolvidables a nuestros clientes,
+            ofreciendo paquetes turísticos, vuelos nacionales e internacionales
+            con el mejor servicio y asesoría personalizada. Nos comprometemos a
+            garantizar comodidad, seguridad y precios accesibles, convirtiendo
+            cada viaje en una experiencia única y sin preocupaciones.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--VISIÓN-->
+    <section id="visión" class="Visión">
+      <h2>Visión</h2>
+      <div class="Visión-Contenido">
+        <div class="Visión-Texto">
+          <p>
+            Ser la agencia de viajes líder en el mercado nacional e
+            internacional, reconocida por nuestra calidad de servicio,
+            innovación y compromiso con la satisfacción de nuestros clientes.
+            Aspiramos a conectar personas con sus destinos soñados, promoviendo
+            el turismo responsable y accesible para todos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--VIDEO-->
+    <section id="video" class="Video">
+      <div class="proposito-video">
+        <!--video https://www.youtube.com/watch?v=jcXF58wT0jE-->
+        <!--quitamos: watch?v= reemplazamos por: embed/ -->
+        <iframe
+          src="https://www.youtube.com/embed/jcXF58wT0jE"
+          title="Video"
+          allowfullscreen
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <!--INICIO DE SESIÓN-->
+    <section class="Inicio-sesion">
+      <h2>Iniciar Sesión</h2>
+      <form class="formulario-login" id="formularioLogin" name="frmLogin">
+        <div class="input-group">
+          <input type="text" name="usuario" placeholder="Correo electrónico" />
+        </div>
+        <div class="input-group">
+          <input type="password" name="password" placeholder="Contraseña" />
+        </div>
+        <div class="button-group">
+          <button type="button" id="btnIniciarSesion">Iniciar Sesión</button>
+        </div>
+        <div id="mensajeEnviado" class="mensaje-enviado">
+          Se ha iniciado sesión de manera correcta.
+        </div>
+      </form>
+    </section>
+
+    <!--OFERTAS-->
+    <section id="ofertas" class="Ofertas">
+      <h2>!Descubre hoy las mejores ofertas¡</h2>
+      <div class="Ofertas-Contenido">
+        <div class="oferta1">
+          <img src="Imagenes/Cusco.jpg" alt="Oferta1" />
+          <h3>Cusco</h3>
+          <p>Desde</p>
+          <h3>S/.215</h3>
+          <p>Directo</p>
+        </div>
+        <div class="oferta2">
+          <img src="Imagenes/Ayacucho.jpg" alt="Oferta2" />
+          <h3>Ayacucho</h3>
+          <p>Desde</p>
+          <h3>S/.230</h3>
+          <p>Directo</p>
+        </div>
+        <div class="oferta3">
+          <img src="Imagenes/Trujillo.jpg" alt="Oferta3" />
+          <h3>Trujillo</h3>
+          <p>Desde</p>
+          <h3>S/.240</h3>
+          <p>Directo</p>
+        </div>
+        <div class="oferta4">
+          <img src="Imagenes/Argentina.jpg" alt="Oferta4" />
+          <h3>Argentina</h3>
+          <p>Desde</p>
+          <h3>S/.470</h3>
+          <p>Directo</p>
+        </div>
+        <div class="oferta5">
+          <img src="Imagenes/EEUU.jpg" alt="Oferta5" />
+          <h3>Estados Unidos</h3>
+          <p>Desde</p>
+          <h3>S/.780</h3>
+          <p>1 o más escalas</p>
+        </div>
+      </div>
+    </section>
+
+    <!--VUELOS-->
+    <section id="destinos" class="Destinos">
+      <h2>Destinos nacionales e internacionales</h2>
+      <div class="vuelo-Contenido">
+        <h4>Nacionales</h4>
+        <div class="vuelo1">
+          <img src="Imagenes/TPP.jpg" alt="vuelo1" />
+          <h3>Tarapoto</h3>
+          <h3>$ 65</h3>
+          <p>Directo</p>
+        </div>
+        <div class="vuelo2">
+          <img src="Imagenes/LIMA.jpg" alt="vuelo2" />
+          <h3>Lima</h3>
+          <p>Desde</p>
+          <h3>$ 50</h3>
+          <p>Directo</p>
+        </div>
+        <div class="vuelo3">
+          <img src="Imagenes/IQT.jpg" alt="vuelo3" />
+          <h3>Iquitos</h3>
+          <p>Desde</p>
+          <h3>$ 60</h3>
+          <p>Directo</p>
+        </div>
+        <div class="vuelo4">
+          <img src="Imagenes/VTrujillo.jpg" alt="vuelo4" />
+          <h3>Trujillo</h3>
+          <p>Desde</p>
+          <h3>$ 50</h3>
+          <p>Directo</p>
+        </div>
+        <div class="vuelo5">
+          <img src="Imagenes/VCajamarca.jpg" alt="vuelo5" />
+          <h3>Cajamarca</h3>
+          <p>Desde</p>
+          <h3>$ 45</h3>
+          <p>Directo</p>
+        </div>
+        <h4>Internacionales</h4>
+        <div class="vuelo6">
+          <img src="Imagenes/BCN.jpg" alt="vuelo6" />
+          <h3>Barcelona</h3>
+          <p>Desde</p>
+          <h3>$ 790</h3>
+          <p>1 o más escalas</p>
+        </div>
+        <div class="vuelo7">
+          <img src="Imagenes/COREA.jpg" alt="vuelo7" />
+          <h3>Seúl</h3>
+          <p>Desde</p>
+          <h3>$ 1800</h3>
+          <p>1 o más escalas</p>
+        </div>
+        <div class="vuelo8">
+          <img src="Imagenes/Roma.jpg" alt="vuelo8" />
+          <h3>Roma</h3>
+          <p>Desde</p>
+          <h3>$ 1340</h3>
+          <p>1 o más escalas</p>
+        </div>
+        <div class="vuelo9">
+          <img src="Imagenes/VSanFrancisco.jpg" alt="vuelo9" />
+          <h3>San Francisco</h3>
+          <p>Desde</p>
+          <h3>$ 560</h3>
+          <p>1 o más escalas</p>
+        </div>
+        <div class="vuelo10">
+          <img src="Imagenes/VCajamarca.jpg" alt="vuelo10" />
+          <h3>Londres</h3>
+          <p>Desde</p>
+          <h3>$ 1500</h3>
+          <p>1 o más escalas</p>
+        </div>
+      </div>
+    </section>
+
+    <!--PAQUETES-->
+    <section id="paquetes" class="Paquetes">
+      <h2>Paquetes nacionales e internacionales</h2>
+      <div class="Paquete-Contenido">
+        <h4>Paquetes Nacionales</h4>
+        <div class="paquete1">
+          <img src="Imagenes/Cusco.jpg" alt="paquete1" />
+          <h3>Cusco</h3>
+          <h3>$ 721</h3>
+          <p>Hotel + Vuelo</p>
+        </div>
+        <div class="paquete2">
+          <img src="Imagenes/cajamarca.jpg" alt="paquete2" />
+          <h3>Cajamarca</h3>
+          <h3>$ 229</h3>
+          <p>Hotel + Vuelo</p>
+        </div>
+        <div class="paquete3">
+          <img src="Imagenes/TPP.jpg" alt="paquete3" />
+          <h3>Tarapoto</h3>
+          <p>Desde</p>
+          <h3>$ 250</h3>
+          <p>Hotel + Vuelo</p>
+        </div>
+        <div class="paquete4">
+          <img src="Imagenes/PArequipa.jpg" alt="paquete4" />
+          <h3>Arequipa</h3>
+          <p>Desde</p>
+          <h3>$ 200</h3>
+          <p>Hotel + Vuelo</p>
+        </div>
+        <div class="paquete5">
+          <img src="Imagenes/PTumbes.jpg" alt="paquete5" />
+          <h3>Tumbes</h3>
+          <p>Desde</p>
+          <h3>$ 150</h3>
+          <p>Hotel + Vuelo</p>
+        </div>
+        <h4>Paquetes Internacionales</h4>
+        <div class="paquete6">
+          <img src="Imagenes/Punta.jpg" alt="paquete6" />
+          <h3>Punta Cana</h3>
+          <h3>$ 2888</h3>
+          <p>Hotel + Vuelo</p>
+        </div>
+        <div class="paquete7">
+          <img src="Imagenes/Cartagena.jpg" alt="paquete7" />
+          <h3>Cartagena</h3>
+          <h3>S/.1816</h3>
+          <p>Hotel + Vuelo</p>
+        </div>
+        <div class="paquete8">
+          <img src="Imagenes/PMilán.jpg" alt="paquete8" />
+          <h3>Milán</h3>
+          <p>Desde</p>
+          <h3>$ 3400</h3>
+          <p>Hotel + Vuelo</p>
+        </div>
+        <div class="paquete9">
+          <img src="Imagenes/PHong.jpg" alt="paquete9" />
+          <h3>Hong Kong</h3>
+          <p>Desde</p>
+          <h3>$ 3000</h3>
+          <p>Hotel + Vuelo</p>
+        </div>
+        <div class="paquete10">
+          <img src="Imagenes/PTokio.jpg" alt="paquete10" />
+          <h3>Tokio</h3>
+          <p>Desde</p>
+          <h3>$ 2800</h3>
+          <p>Hotel + Vuelo</p>
+        </div>
+      </div>
+    </section>
+
+    <!--ALOJAMIENTOS-->
+    <section id="alojamientos" class="Alojamientos">
+      <h2>Los mejores ofertas de hoteles en los destinos mas populares</h2>
+      <div class="Alojamiento-Contenido">
+        <h4>Alojamientos Nacionales</h4>
+        <div class="alojamiento1">
+          <img src="Imagenes/Acusco.jpg" alt="alojamiento1" />
+          <h3>Cusco</h3>
+          <p>Calle Santa Teresa, 344, Centro de Cusco, Cusco Cuzco, Perú</p>
+          <h3>$ 572</h3>
+          <p>Hotel Costa del Sol Wyndham Cusco</p>
+        </div>
+        <div class="alojamiento2">
+          <img src="Imagenes/APIURA.jpg" alt="alojamiento2" />
+          <h3>Piura</h3>
+          <p>Loreto 273, Piura, Perú</p>
+          <h3>$ 230</h3>
+          <p>Hotel Río Blanco Piura</p>
+        </div>
+        <div class="alojamiento3">
+          <img src="Imagenes/ALIMA.jpg" alt="alojamiento3" />
+          <h3>Lima</h3>
+          <p>
+            Av. Javier Prado Oeste 2473 - 2479 San Isidro, San Isidro, Lima,
+            Perú
+          </p>
+          <h3>$ 460</h3>
+          <p>Dazzler by Wyndham Lima San Isidro</p>
+        </div>
+        <div class="alojamiento4">
+          <img
+            src="https://media.staticontent.com/media/pictures/2520a30d-150b-4e49-ad9d-a6afe91d0338/409x307?op=TRUNCATE&enlarge=false&gravity=nowe_0_0&quality=80&dpr=1.5"
+            alt="alojamiento4"
+          />
+          <h3>Arequipa</h3>
+          <p>Calle Villalba 305 - Cercado</p>
+          <h3>$ 460</h3>
+          <p>qp Hotels Arequipa</p>
+        </div>
+        <div class="alojamiento5">
+          <img
+            src="https://media.staticontent.com/media/pictures/871064aa-e775-4fb9-a745-7d01cdb213df/1120x700?op=fit"
+            alt="alojamiento5"
+          />
+          <h3>Tarapoto</h3>
+          <p>491 Avenida Ahuashiyacu</p>
+          <h3>$ 460</h3>
+          <p>HOTEL COSTA AZUL</p>
+        </div>
+        <h4>Alojamientos Internacionales</h4>
+        <div class="alojamiento6">
+          <img src="Imagenes/AMadrid.jpg" alt="alojamiento6" />
+          <h3>Madrid</h3>
+          <p>Agustin de Foxa, 32, Chamartín, 28036 Madrid, España.</p>
+          <h3>$ 900</h3>
+          <p>Barceló Imagine</p>
+        </div>
+        <div class="alojamiento7">
+          <img src="Imagenes/ATokio.jpg" alt="alojamiento7" />
+          <h3>Tokio Japon</h3>
+          <p>Prefectura de Tokio, Tokio, Minato-ku, Takanawa 3-13-1, Japón.</p>
+          <h3>$ 850</h3>
+          <p>Grand Prince Hotel Takanawa</p>
+        </div>
+        <div class="alojamiento8">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/034/251/454/large_2x/a-hotel-room-with-a-bed-desk-and-a-view-of-the-city-ai-generated-free-photo.jpg"
+            alt="alojamiento8"
+          />
+          <h3>Buenos Aires</h3>
+          <p>Libertad 1070, Recoleta, Argentina</p>
+          <h3>$ 460</h3>
+          <p>Cyan Américas Towers Hotel</p>
+        </div>
+        <div class="alojamiento9">
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/033/598/277/small_2x/a-modern-bedroom-with-a-view-of-the-city-ai-generated-photo.jpg"
+            alt="alojamiento9"
+          />
+          <h3>Punta Cana</h3>
+          <p>Av. Alemania 10, El Cortecito., Bavaro. A 15,71 km del centro</p>
+          <h3>$ 560</h3>
+          <p>Green Coast Hotel</p>
+        </div>
+        <div class="alojamiento10">
+          <img
+            src="https://media.staticontent.com/media/pictures/a9e2df56-efa7-467b-a892-6ace95c2b159/409x307?op=TRUNCATE&enlarge=false&gravity=nowe_0_0&quality=80&dpr=1.5"
+            alt="alojamiento10"
+          />
+          <h3>Roma</h3>
+          <p>Via Vittorio Veneto 191. A 2,44 km del centro</p>
+          <h3>$ 650</h3>
+          <p>Rome Marriott Grand Hotel Flora</p>
+        </div>
+      </div>
+    </section>
+
+    <!--ADMINISTRA TUS VIAJES-->
+    <section id="administra" class="Administra-Viajes">
+      <h3>Administra tus Viajes</h3>
+      <div class="administra-container">
+        <div class="administra-formulario">
+          <h2>Busca tu viaje</h2>
+          <p class="subtitle">Ingresa los datos para encontrar tu vuelo.</p>
+          <form id="viajeForm">
+            <div class="input-group">
+              <label for="codigo">Número de orden o código de reserva</label>
+              <input type="text" id="code" />
+            </div>
+
+            <div class="input-group">
+              <label for="name">Nombres del pasajero</label>
+              <input type="text" id="name" />
+            </div>
+            <div class="input-group">
+              <label for="lastname">Apellidos del pasajero</label>
+              <input type="text" id="lastname" />
+            </div>
+
+            <button type="submit">Buscar</button>
+          </form>
+        </div>
+
+        <div class="administra-imagen">
+          <img
+            src="Imagenes/administra.jpg"
+            alt="Imagen Representativa del Viaje"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- TU VIAJE -->
+    <section id="tu-viaje" class="Tu-Viaje">
+      <div class="tu-viaje-container">
+        <div class="detalles-vuelo">
+          <h3 class="nombre-completo" id="nombreCompletoViaje"></h3>
+          <h2>Tu viaje a</h2>
+          <h3 class="destino-principal">Cusco</h3>
+          <p class="orden-fecha">
+            Número de orden:
+            <span class="highlight-info" id="numeroOrdenViaje"
+              >LA5447677CGSV</span
+            >
+          </p>
+          <p class="orden-fecha">08 de junio de 2025</p>
+
+          <div class="ruta-vuelo">
+            <div class="origen">
+              <p>Lima a Cusco</p>
+              <div class="info-vuelo">
+                <span class="icon-avion">✈️</span>
+                <div class="texto-vuelo">
+                  <p class="hora">05:10 Lima</p>
+                  <p class="aeropuerto">J Chavez Int.</p>
+                </div>
+              </div>
+              <p class="duracion">
+                Duración: <span class="highlight-info">1 h 15 min</span>
+              </p>
+            </div>
+
+            <div class="destino">
+              <div class="info-vuelo">
+                <span class="icon-pin">📍</span>
+                <div class="texto-vuelo">
+                  <p class="hora">06:25 Cusco</p>
+                  <p class="aeropuerto">Alejandro Velasco Astete</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="detalles-equipaje">
+          <h2>Equipaje</h2>
+          <div class="lista-equipaje">
+            <div class="item-equipaje">
+              <div class="icono-descripcion">
+                <img src="Imagenes/Bolso.png" alt="Bolso o mochila" />
+                <p>Bolso o mochila</p>
+              </div>
+              <p class="cantidad">
+                Cantidad: <span class="highlight-info">1</span>
+              </p>
+            </div>
+
+            <div class="item-equipaje">
+              <div class="icono-descripcion">
+                <img src="Imagenes/Equipaje12.png" alt="Equipaje de mano" />
+                <p>Equipaje de mano de 12 kg.</p>
+              </div>
+              <p class="cantidad">
+                Cantidad: <span class="highlight-info">0</span>
+              </p>
+            </div>
+
+            <div class="item-equipaje">
+              <div class="icono-descripcion">
+                <img src="Imagenes/Equipaje25.png" alt="Equipaje de bodega" />
+                <p>Equipaje de bodega de 25 kg.</p>
+              </div>
+              <p class="cantidad">
+                Cantidad: <span class="highlight-info">0</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN CONTÁCTANOS -->
+    <section id="contacto" class="contacto">
+      <h2>Contactanos</h2>
+      <div class="contacto-contenido">
+        <form class="formulario-contacto" id="formularioContacto" name="frm">
+          <div class="form-grupo">
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="tipoDoc">Tipo de Documento:</label>
+            <select id="tipoDoc" name="tipoDoc">
+              <option value="">Seleccione tipo</option>
+              <option value="dni">DNI</option>
+              <option value="pasaporte">Pasaporte</option>
+              <option value="carnet">Carnet de Extranjería</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="documento">Documento:</label>
+            <input type="text" id="documento" name="documento" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="telefono">Teléfono:</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              placeholder="Ej: +51 987654321"
+              list="codigosPais"
+            />
+            <datalist id="codigosPais">
+              <option value="+51" label="Perú"></option>
+              <option value="+54" label="Argentina"></option>
+              <option value="+55" label="Brasil"></option>
+              <option value="+56" label="Chile"></option>
+              <option value="+57" label="Colombia"></option>
+              <option value="+52" label="México"></option>
+              <option value="+34" label="España"></option>
+              <option value="+1" label="Estados Unidos"></option>
+              <option value="+1" label="Canadá"></option>
+              <option value="+33" label="Francia"></option>
+              <option value="+49" label="Alemania"></option>
+              <option value="+39" label="Italia"></option>
+              <option value="+44" label="Reino Unido"></option>
+              <option value="+61" label="Australia"></option>
+              <option value="+81" label="Japón"></option>
+              <option value="+86" label="China"></option>
+              <option value="+91" label="India"></option>
+              <option value="+27" label="Sudáfrica"></option>
+              <option value="+20" label="Egipto"></option>
+              <option value="+7" label="Rusia"></option>
+              <option value="+64" label="Nueva Zelanda"></option>
+              <option value="+82" label="Corea del Sur"></option>
+            </datalist>
+          </div>
+
+          <div class="form-grupo">
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+              <option value="perú">Perú</option>
+              <option value="argentina">Argentina</option>
+              <option value="brasil">Brasil</option>
+              <option value="chile">Chile</option>
+              <option value="colombia">Colombia</option>
+              <option value="mexico">México</option>
+              <option value="espana">España</option>
+              <option value="estados-unidos">Estados Unidos</option>
+              <option value="canada">Canadá</option>
+              <option value="francia">Francia</option>
+              <option value="alemania">Alemania</option>
+              <option value="italia">Italia</option>
+              <option value="rein-unido">Reino Unido</option>
+              <option value="australia">Australia</option>
+              <option value="japon">Japón</option>
+              <option value="china">China</option>
+              <option value="india">India</option>
+              <option value="sudafrica">Sudáfrica</option>
+              <option value="egipto">Egipto</option>
+              <option value="rusia">Rusia</option>
+              <option value="nueva-zelanda">Nueva Zelanda</option>
+              <option value="corea-del-sur">Corea del Sur</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="email">Correo electrónico:</label>
+            <input type="text" id="email" name="email" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="asunto">Asunto:</label>
+            <textarea id="asunto" name="asunto" rows="3"></textarea>
+          </div>
+
+          <div class="form-grupo">
+            <label>Preferencias de contacto:</label>
+            <div class="checkboxes">
+              <label
+                ><input type="checkbox" name="preferencia" value="correo" />
+                Correo</label
+              >
+              <label
+                ><input type="checkbox" name="preferencia" value="telefono" />
+                telefono</label
+              >
+            </div>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+
+        <div class="contacto-instrucciones">
+          <p>
+            Completa el formulario con tus datos. Nuestros asesores se pongan en
+            contacto contigo según la información proporcionada.
+          </p>
+          <p>
+            Recuerda usar un correo válido y seleccionar tu tipo de documento
+            correctamente.
+          </p>
+          <div
+            id="mensajeEnviado"
+            class="mensaje-enviado"
+            style="display: none"
+          >
+            Mensaje enviado correctamente.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img src="Imagenes/Yeda.png" alt="Logo" class="footer-logo" />
+            <p>YedaTravel</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="Documentos/Politica de privacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="Documentos/Términos y Condiciones.pdf"
+              >Términos y Condiciones</a
+            >
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="Documentos/Protección de Datos Personales.pdf"
+              >Protección de Datos</a
+            >
+          </div>
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrZd7mszoX8inKkbUKb6ffie8YF2-c00RL7w&s"
+                alt="TikTok"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
