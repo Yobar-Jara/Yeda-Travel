@@ -132,7 +132,7 @@ Implementar un sistema de reservas en línea.
 Mejorar la accesibilidad y la optimización para motores de búsqueda (SEO).
 
 ## 🚀 Demo
-
+https://yobar-jara.github.io/Yeda-Travel/ 
 ## 👨‍💻 Autor
 
 Proyecto: YedaTravel — Agencia de Viajes
